@@ -57,7 +57,7 @@ $colecao = pesquisar();
 										<?php foreach($colecao as $row):?> 
                                             <tr>
                                                 <td><?php echo $row['nome'] ?></td>
-                                                <td style="background: rgba(76, 175, 80, .1)"><?php echo $row['valor'] ?></td>   
+                                                <td style="background: rgba(76, 175, 80, .1)"><?php echo $row['valor'] ?>,00</td>   
                                             </tr>
 											<?php endforeach ?>
                                         </tbody>
