@@ -5,6 +5,7 @@ function cadastrar($nome, $valor) {
     global $conexao;
     $query = $conexao->prepare('INSERT INTO lancamentos (nome, valor) VALUES (:nome,:valor)');
     $inserir = $query->execute(["nome"=>$nome,"valor"=>$valor]);
+    header('Location:index.php');
 }
 
 function pesquisar() {
